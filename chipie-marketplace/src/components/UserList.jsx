@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { getUsers } from '../utils/api';
 import Loading from './Loading';
 import UserCard from './UserCard';
@@ -18,6 +19,9 @@ const UserList = () => {
     return (
         <div>
             <p>Here are all our lovely users</p>
+            <Link className="primaryButton" to="/create-user">
+                add a user
+            </Link>
             <Loading isLoading={isLoading}>
                 <div>
                     <ul className="items__container">

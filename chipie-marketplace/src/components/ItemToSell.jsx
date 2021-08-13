@@ -36,12 +36,18 @@ const ItemToSell = () => {
 
     const handleOnSubmit = (event) => {
         event.preventDefault();
-        console.log(body)
         addItemToSell(body).then(item => {
             setAlert(`${item.item_name} added to shop!`)
             setTimeout(() => {
                 setAlert(null)
             }, 2000);
+            setBody({
+                item_name: '',
+                description: '',
+                img_url: '',
+                price: 0,
+                category_name: ''
+            })
         })
     }
 

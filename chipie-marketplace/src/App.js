@@ -1,5 +1,5 @@
 import './App.css';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Shop from './components/Shop';
 import UserList from './components/UserList';
@@ -10,6 +10,7 @@ import { UserContext } from './contexts/UserContext';
 import UserProfile from './components/UserProfile';
 import ShopCategory from './components/ShopCategory';
 import Home from './components/Home';
+import CreateUser from './components/CreateUser';
 
 function App() {
   const [user, setUser] = React.useState('Paul-R');
@@ -38,6 +39,9 @@ function App() {
               </Route>
               <Route path="/sell">
                 <ItemToSell />
+              </Route>
+              <Route path="/create-user">
+                  <CreateUser/>
               </Route>
               <Route path="/user-profile">
                   <UserProfile />

@@ -18,6 +18,13 @@ export const addKudosToUser = (username, kudos_inc) => {
     })
 }
 
+export const postUser = (body) => {
+    return marketApi.post('/users', body)
+    .then(response => {
+        return response.data.user
+    })
+}
+
 export const getCategories = () => {
     return marketApi.get('/categories')
         .then(response => {
