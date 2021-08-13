@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+:root {
+  --deep-jungle-green: #0b5351ff;
+  --melon: #ffa69eff;
+  --cadet-grey: #95a3b3ff;
+  --fuzzy-wuzzy: #c1666bff;
+  --black-coffee: #34252fff;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  /* background-color: var(--black-coffee); */
+}
+
+.content {
+  max-width: 1000px;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  margin-top: 2rem;
+}
+
+.plainLink {
+  text-decoration: none;
+}
+
+.plainLink:visited {
+  color: black;
+}
+
+.whiteLink {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.greenLink {
+  text-decoration: none;
+  color: var(--deep-jungle-green);
+  font-weight: 600;
+}
+
+.greenLink:hover {
+  text-decoration: none;
+  color: var(--cadet-grey);
+  font-weight: 600;
+}
+
+.shopLinks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.shopLinks__shopLink {
+  margin: 0.2rem 0.8rem;
+}
+
+.appHeader {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--fuzzy-wuzzy);
+  color: var(--black-coffee);
+}
+
+.appHeader__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--melon);
+  padding: 0rem 0.5rem;
+}
+
+.appHeader__nav__innerlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.appHeader__nav__listitem {
+  text-decoration: none;
+  list-style: none;
+  padding: none;
+  margin: 0rem 0.5rem;
+}
+
+.shopitems__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.shopitems__container__item {
+  width: 20rem;
+  padding: 1.5rem;
+  margin: 1rem;
+  border: solid 2px var(--melon);
+  border-radius: 0.2rem;
+}
+
+.shopitems__container__item__image {
+  object-fit: cover;
+  width: 15rem;
+  height: 15rem;
+}
+
+.shopitems__container__item__message__space {
+  width: 100%;
+  height: 4rem;
+}
+
+.shopitems__container__item__message__alert {
+  height: 1.5rem;
+  background-color: var(--deep-jungle-green);
+  color: white;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  border-radius: 0.2rem;
+}
+
+.shopitems__container__item__buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.shopitems__container__item__buttons__button {
+  margin: 0.2rem;
+  padding: 0.5rem;
+}
+
+.users__user {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.primaryButton {
+  background-color: var(--cadet-grey);
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.primaryButton--selected {
+  background-color: var(--deep-jungle-green);
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 0.2rem;
+}
+
+.secondaryButton {
+  background-color: var(--melon);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.secondaryButton:hover {
+  background-color: var(--fuzzy-wuzzy);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 0.2rem;
+}
+
+.items__container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 3rem;
+  width: 100%;
+  padding: 0;
+}
+
+.items__container__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  margin: 1rem;
+  border: solid 2px var(--melon);
+  border-radius: 0.2rem;
+}
+
+.items__container__item__image {
+  object-fit: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.items__container__item__button {
+  margin: 0.2rem;
+  padding: 0.5rem;
+}
+
+.items__total {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.items__total__item {
+  margin: 1rem;
+}
+
+.itemForm {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  margin-top: 3rem;
+  padding: 1.5rem;
+}
+
+.itemForm__input {
+  margin-bottom: 2rem;
+}
+
+.loadingScreen {
+  margin-top: 3rem;
+}
+
+.homepage__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 10rem;
+}
+
+/* spinner */
+
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #fdd;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%,
+  100% {
+    top: 24px;
+    height: 32px;
+  }
+}
