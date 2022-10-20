@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import { getCategories } from "../utils/api";
 import ShopList from "./ShopList";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 
 const Shop = () => {
   const [categories, setCategories] = useState([]);
+
+  // const [searchParams] = useSearchParams();
+  // console.log(searchParams.get("sortBy"));
 
   useEffect(() => {
     getCategories().then((categoriesFromApi) => {
